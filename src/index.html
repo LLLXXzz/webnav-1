@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_2749015_zqj7ikxqu8h.js"></script>
+    <!-- 从Bootcdn引入jquery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="globalHeader">
+        <!-- 使用form表单构造请求  wd 搜索的单词-->
+        <!-- form 表单里的 target="_blank" 打开新的标签页属性 手机上默认不使用-->
+        <form class="searchForm" action="https://www.baidu.com/s" method="GET">
+            <input type="text" name="wd">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+    <main class="globalMain">
+        <ul class="siteList">
+            <!-- 块级元素不能行内元素里面，a标签除外 -->
+            <!-- <li>
+                <a href="https://www.bilibili.com">
+                    <div class="site">
+                        <div class="siteLogo">
+                            <img src="./image/bilibiliLogo.png" alt="">
+                        </div>
+                        <div class="siteLink">bilibili.com</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.zhihu.com">
+                    <div class="site">
+                        <div class="siteLogo">
+                            <img src="./image/zhihuLogo.png" alt="">
+                        </div>
+                        <div class="siteLink">zhihu.com</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://iqiyi.com">
+                    <div class="site">
+                        <div class="siteLogo">
+                            <img src="./image/aiqiyiLogo.png" alt="">
+                        </div>
+                        <div class="siteLink">iqiyi.com</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.acfun.cn">
+                    <div class="site">
+                        <div class="siteLogo">A</div>
+                        <div class="siteLink">acfun.cn</div>
+                    </div>
+                </a>
+            </li> -->
+            <li class="lastLi">
+                <div class="addButton">
+                    <div class="icon-wrapper">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div class="text">新增网站</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
